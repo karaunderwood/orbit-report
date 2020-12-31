@@ -18,4 +18,11 @@ export class Satellite {
     this.orbitType = orbitType;
     this.operational = operational;
   }
+
+  shouldShowWarning(type){
+    let theType = 'Space Debris';
+    if ((this.type).toLowerCase() === theType.toLowerCase()) {
+      return true;
+    } return false;
+  }
 }
