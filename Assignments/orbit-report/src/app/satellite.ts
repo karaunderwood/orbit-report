@@ -19,7 +19,7 @@ export class Satellite {
     this.operational = operational;
   }
 
-  shouldShowWarning(type){
+  shouldShowWarning(): boolean{
     let theType = 'Space Debris';
     if ((this.type).toLowerCase() === theType.toLowerCase()) {
       return true;
